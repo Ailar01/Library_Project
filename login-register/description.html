@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System - Project Description</title>
+    <link rel="stylesheet" href="description-style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Library System - Web Application</h1>
+        <h2>Project Overview</h2>
+        <p>This web application is designed to manage a digital library. Users can register, log in, and interact with books through CRUD (Create, Read, Update, Delete) operations.</p>
+        
+        <h2>Architecture</h2>
+        <ul>
+            <li><strong>Roles:</strong> Admin, Registered User</li>
+            <li><strong>Entities:</strong> Users, Books, Transactions</li>
+            <li><strong>Processes:</strong> User authentication, book management, transactions (borrowing/returning books)</li>
+        </ul>
+
+        <h2>Database Structure</h2>
+        <p>The application uses a MySQL database with the following main tables:</p>
+        <ul>
+            <li><strong>Users Table:</strong> Stores user information (id, name, email, password, role, created_at)</li>
+            <li><strong>Books Table:</strong> Stores book details (id, title, author, genre, availability)</li>
+            <li><strong>Transactions Table:</strong> Logs borrowing/returning events (id, user_id, book_id, borrowed_at, returned_at)</li>
+        </ul>
+
+        <h2>Implementation Approach</h2>
+        <p>The project is built using:</p>
+        <ul>
+            <li><strong>Backend:</strong> PHP and MySQL (using PDO for security)</li>
+            <li><strong>Frontend:</strong> HTML, CSS, Bootstrap</li>
+            <li><strong>Security:</strong> Password hashing, form validation, SQL injection protection</li>
+        </ul>
+    </div>
+</body>
+</html>
