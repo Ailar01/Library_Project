@@ -1,8 +1,8 @@
-# Library Management Project
+Library Management Project
 Live GitHub Repository: https://github.com/Ailar01/Library_Projecthttps://github.com/Ailar01/Library_Project
 
 
-## Descriere
+Descriere
 Această aplicație web gestionează utilizatori și cărți pentru o bibliotecă online.  
 Include funcționalități de login/register, CRUD pentru cărți, și administrarea împrumuturilor.
 
@@ -10,52 +10,48 @@ Scopul proiectului este de a simula modul real de funcționare al unei bibliotec
 
 ---
 
-## Tehnologii folosite
-- **PHP 8.0**
-- **MySQL** (bază de date)
-- **XAMPP** (Apache server + phpMyAdmin)
-- **GitHub** (versionare)
-- **VS Code** (editor cod)
+Tehnologii folosite
+- PHP 8.0
+- MySQL (bază de date)
+- XAMPP (Apache server + phpMyAdmin)
+- GitHub (versionare)
+-VS Code (editor cod)
 
 ---
 
-## Cum rulezi proiectul
+Cum rulezi proiectul
 1. Clonează repository-ul:
 
 
 
 
 2. Mută folderul proiectului în `htdocs` din XAMPP.
-3. Pornește **XAMPP** și activează **Apache** + **MySQL**.
+3. Pornește XAMPP și activează Apache+ MySQL.
 4. În browser, accesează:
 
 
-5. Importă baza de date în **phpMyAdmin** (folosind fișierul din folderul `database`).
+5. Importă baza de date în phpMyAdmin (folosind fișierul din folderul `database`).
 
 ---
-
-## UML Diagram
+UML Diagram
 ![UML Diagram](docs/uml.png)
 
 ---
-
-## User Stories
+User Stories
 [Vezi User Stories](docs/user_stories.md)
 
----
-## Screenshots
-
-### Login Page
+Screenshots
+Login Page
 ![Login](docs/login.png)
 
-### Books Page
+Books Page
 ![Books](docs/books.png)
 
-### Database in phpMyAdmin
+Database in phpMyAdmin
 ![Database](docs/phpmyadmin.png)
 
-## Prompt Engineering
-În timpul dezvoltării proiectului, am folosit **ChatGPT** pentru:
+Prompt Engineering
+În timpul dezvoltării proiectului, am folosit ChatGPT pentru:
 - Generarea exemplelor de cod PHP.
 - Structurarea interogărilor SQL.
 - Optimizarea designului aplicației.
@@ -65,16 +61,16 @@ Această experiență m-a ajutat să obțin un proces de dezvoltare mai eficient
 
 ---
 
-## Demo Video
+Demo Video
 
 [Watch the demo](https://youtu.be/CJjKc73tzps)
 
 
-> **Notă:** Video-ul arată funcționalitățile principale ale aplicației într-o prezentare rapidă.
+> Notă: Video-ul arată funcționalitățile principale ale aplicației într-o prezentare rapidă.
 
 ---
 
-## Structura proiectului
+Structura proiectului
 Library_Project/
 │
 ├── books/ # Module legate de cărți (CRUD)
@@ -90,6 +86,5 @@ Library_Project/
 
 
 ---
-
-## Contribuții
-Proiect realizat de **Aylar Yazmyradova**, grupa 233.
+Contribuții
+Proiect realizat de Aylar Yazmyradova, grupa 233.

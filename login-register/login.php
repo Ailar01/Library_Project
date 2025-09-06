@@ -1,7 +1,9 @@
 <?php
 session_start();
 
-require_once __DIR__ . '/../database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Library_Project/database.php';
+$pdo = db();
+
 /** @var PDO $pdo */
 $pdo = db();
 

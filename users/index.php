@@ -1,11 +1,14 @@
 <?php
 session_start();
-if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] !== 'admin') {
-    header("Location: ../books/index_books.php"); // Redirect non-admins to books page
-    exit();
+
+if (empty($_SESSION['user_id']) || (($_SESSION['user_role'] ?? '') !== 'admin')) {
+    header('Location: /Library_Project/books/index_books.php');
+    exit;
 }
 
-require_once '../users/database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Library_Project/database.php';
+$pdo = db();
+
 
 // Fetch users from the database
 try {

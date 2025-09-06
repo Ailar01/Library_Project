@@ -1,6 +1,8 @@
 <?php
 session_start();
-require_once '../users/database.php'; // Adjust path if needed
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Library_Project/database.php';
+$pdo = db();
+
 
 // Check if 'id' is in the URL and valid
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {

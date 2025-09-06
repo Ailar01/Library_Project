@@ -1,6 +1,8 @@
 <?php
 session_start();
-require_once '../users/database.php'; // Use your database connection
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Library_Project/database.php';
+$pdo = db();
+
 
 // Validate 'id' before processing
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {

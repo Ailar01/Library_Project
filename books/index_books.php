@@ -1,5 +1,7 @@
 <?php
-require_once '../users/database.php'; // Adjust path if needed
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Library_Project/database.php';
+$pdo = db();
+
 
 // Fetch books from the database
 try {

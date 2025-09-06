@@ -1,6 +1,8 @@
 <?php
 session_start();
-require_once '../users/database.php'; // Adjust the path if needed
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Library_Project/database.php';
+$pdo = db();
+
 
 $errors = [];
 

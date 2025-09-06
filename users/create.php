@@ -1,6 +1,7 @@
 <?php 
-session_start(); // Start session for flash messages
-require_once '../users/database.php'; // Use your database connection file
+session_start(); 
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Library_Project/database.php';
+$pdo = db();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = trim($_POST["name"]);
