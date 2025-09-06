@@ -1,5 +1,5 @@
-Library Management Project
-Live GitHub Repository: https://github.com/Ailar01/Library_Projecthttps://github.com/Ailar01/Library_Project
+Library Management Project GitHub Repository: <https://github.com/Ailar01/Library_Project>
+
 
 
 Descriere
@@ -36,7 +36,6 @@ Cum rulezi proiectul
 UML Diagram
 ![UML Diagram](docs/uml.png)
 
----
 User Stories
 [Vezi User Stories](docs/user_stories.md)
 
