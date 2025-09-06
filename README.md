@@ -91,6 +91,32 @@ tests/validation_test.php
 
 tests/db_smoke.php
 
+## Coding Standards
+
+Block 1 — Coding Standards
+I follow a light PSR-12 style:
+
+- Order: read input → validate early → only then do DB work (early return on errors)
+- SQL safety:prepared statements everywhere; no string concatenation for queries
+- Output safety:escape user-provided values with `htmlspecialchars` when rendering
+- Naming:clear descriptive names (e.g., `published_year`)
+- Structure:small focused files; feature-based folders (`books/`, `users/`, `login-register/`)
+- Docs:short comments / PHPDoc where helpful (e.g., `lib/validation.php`)
+- Cleanliness: no dead code; no debug prints in production; error display disabled in prod
+
+Block 2 — Design Pattern
+
+## Design Pattern
+
+I applied a simple "Singleton" for the database connection:
+
+- File: `lib/DB.php` exposes `DB::conn(): PDO`
+- Internally reuses the existing `db()` function and **caches** the PDO so one connection instance is shared.
+- Example usage (in `books/create_book.php`): `$pdo = DB::conn();`
+
+This complements my feature-based structure (a simple MVC-style separation by domain).
+
+
 Structura proiectului
 Library_Project/
 │
