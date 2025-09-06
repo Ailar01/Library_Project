@@ -1,4 +1,6 @@
 # Library Management Project
+Live GitHub Repository: https://github.com/Ailar01/Library_Projecthttps://github.com/Ailar01/Library_Project
+
 
 ## Descriere
 Această aplicație web gestionează utilizatori și cărți pentru o bibliotecă online.  
@@ -41,6 +43,16 @@ Scopul proiectului este de a simula modul real de funcționare al unei bibliotec
 [Vezi User Stories](docs/user_stories.md)
 
 ---
+## Screenshots
+
+### Login Page
+![Login](docs/login.png)
+
+### Books Page
+![Books](docs/books.png)
+
+### Database in phpMyAdmin
+![Database](docs/phpmyadmin.png)
 
 ## Prompt Engineering
 În timpul dezvoltării proiectului, am folosit **ChatGPT** pentru:
