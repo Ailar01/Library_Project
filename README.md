@@ -62,7 +62,7 @@ Această experiență m-a ajutat să obțin un proces de dezvoltare mai eficient
 
 Demo Video
 
-[Watch the demo](https://youtu.be/CJjKc73tzps)
+[Watch the demo](https://youtu.be/WfUrOGYVr94)
 
 
 > Notă: Video-ul arată funcționalitățile principale ale aplicației într-o prezentare rapidă.
