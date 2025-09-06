@@ -65,8 +65,10 @@ Această experiență m-a ajutat să obțin un proces de dezvoltare mai eficient
 
 ---
 
-## Demo Video (Opțional)
-[Link către video](https://link-ul-tau-video.com)
+## Demo Video
+
+[Watch the demo](https://youtu.be/CJjKc73tzps)
+
 
 > **Notă:** Video-ul arată funcționalitățile principale ale aplicației într-o prezentare rapidă.
 
