@@ -68,6 +68,28 @@ Demo Video
 > Notă: Video-ul arată funcționalitățile principale ale aplicației într-o prezentare rapidă.
 
 ---
+## Automated Tests
+
+These are simple CLI tests (no PHPUnit).
+
+How to run:
+```bash
+php tests/validation_test.php
+php tests/db_smoke.php
+
+Expected output (examples):
+
+OK  - Empty title should error
+OK  - Non-numeric year should error
+OK  - Future year should error
+OK  - Valid data should have no errors
+Passed: 4, Failed: 0
+
+DB OK
+
+tests/validation_test.php
+
+tests/db_smoke.php
 
 Structura proiectului
 Library_Project/
