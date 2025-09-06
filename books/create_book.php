@@ -2,8 +2,8 @@
 session_start();
 
 // Adjust this require if your path differs on your machine/server
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Library_Project/database.php';
-$pdo = db();
+require_once __DIR__ . '/../lib/DB.php';
+$pdo = DB::conn();
 
 // Enable error display for debugging (optional; disable in production)
 ini_set('display_errors', 1);
