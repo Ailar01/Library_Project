@@ -8,9 +8,11 @@ $pdo = db();
 $errors = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Read inputs safely
     $email = trim($_POST['email'] ?? '');
     $password = trim($_POST['password'] ?? '');
 
+    // Basic validations
     if ($email === '' || $password === '') {
         $errors[] = "Email și parola sunt obligatorii.";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -19,15 +21,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (empty($errors)) {
         try {
+            // Fetch user by email
             $stmt = $pdo->prepare("SELECT * FROM users WHERE email = :email LIMIT 1");
             $stmt->execute([':email' => $email]);
             $user = $stmt->fetch();
 
+            // DEMO RULE: accept only password 'test123'
+            // (For production: use password_hash / password_verify)
             if ($user && $password === 'test123') {
                 $_SESSION['user_id']   = $user['id'];
                 $_SESSION['user_name'] = $user['name'];
                 $_SESSION['user_role'] = $user['role'];
 
+                // Redirect by role
                 header('Location: ' . ($user['role'] === 'admin'
                     ? '../users/index.php'
                     : '../books/index_books.php'));
